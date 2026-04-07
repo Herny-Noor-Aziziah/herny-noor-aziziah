@@ -3,78 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata - Nama Saya<herny noor aziziah>
+    <title>Biodata - NightBlue</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f9;
-            color: #333;
+            background: linear-gradient(135deg, #0a1f3d 0%, #1e3a5f 100%);
+            color: #e0f0ff;
+            min-height: 100vh;
             line-height: 1.6;
         }
+
         header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            padding: 1.5rem 0;
+            background: rgba(10, 31, 61, 0.95);
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #3b7dd4;
         }
+
         nav {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
         }
-        nav h1 { font-size: 1.8rem; }
-        nav ul {
-            list-style: none;
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #60a5fa;
+            text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+        }
+
+        .nav-links {
             display: flex;
             gap: 2rem;
         }
-        nav a {
-            color: white;
+
+        .nav-links a {
+            color: #e0f0ff;
             text-decoration: none;
             font-weight: 500;
+            transition: all 0.3s;
         }
-        nav a:hover { color: #ffd700; }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+            text-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+        }
+
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            padding: 2rem;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-        h1 { color: #2c3e50; margin-bottom: 1.5rem; }
-        p { margin: 12px 0; font-size: 1.1rem; }
-        strong { color: #3498db; }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #bae6fd;
+            font-size: 2.8rem;
+            text-shadow: 0 0 15px rgba(186, 230, 253, 0.4);
+        }
+
+        .biodata-card {
+            background: rgba(30, 58, 95, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid #3b7dd4;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #60a5fa;
+            box-shadow: 0 0 25px rgba(96, 165, 250, 0.6);
+            object-fit: cover;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            background: rgba(10, 31, 61, 0.6);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border-left: 5px solid #60a5fa;
+        }
+
+        .info-item strong {
+            color: #60a5fa;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .about-section {
+            margin-top: 30px;
+        }
+
+        footer {
+            background: #0a1f3d;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #3b7dd4;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Nama Saya<herny noor aziziah>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="biodata.html">Biodata</a></li>
-                <li><a href="galeri-foto.html">Galeri Foto</a></li>
-                <li><a href="galeri-video.html">Galeri Video</a></li>
-            </ul>
+            <div class="logo">NightBlue</div>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="biodata.html">Biodata</a>
+                <a href="galeri-foto.html">Galeri Foto</a>
+                <a href="galeri-video.html">Galeri Video</a>
+            </div>
         </nav>
     </header>
 
     <div class="container">
         <h1>Biodata Saya</h1>
-        <p><strong>Nama Lengkap:</strong> [Herny Noor Aziziah]</p>
-        <p><strong>Tempat, Tanggal Lahir:</strong> [Kotabaru 15 febuari 2003]</p>
-        <p><strong>Pekerjaan / Profesi:</strong> [Mahasiswa Universitas Lambung Mangkurat]</p>
-        <p><strong>Hobi:</strong> [menyanyi,menggambar,melukis,memasak]</p>
-        <p><strong>Tentang Saya:<saya termasuk pribadi yang mudah beradaptasi dengan lingkungan baru  >
-           Tulis deskripsi singkat tentang diri Anda di sini...
-        </p>
+
+        <div class="biodata-card">
+            <!-- Profil Header -->
+            <div class="profile-header">
+                <img src="https://source.unsplash.com/random/300x300/?portrait" 
+                     alt="Foto Profil" 
+                     class="profile-photo">
+                <div>
+                    <h2 style="color:#bae6fd; font-size: 2.2rem;">[Nama Lengkap Anda]</h2>
+                    <p style="font-size: 1.3rem; color:#94c5ff;">[Profesi / Jabatan Anda]</p>
+                </div>
+            </div>
+
+            <!-- Informasi Grid -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Nama Lengkap</strong>
+                    [herny noor aziziah]
+                </div>
+                <div class="info-item">
+                    <strong>Tempat, Tanggal Lahir</strong>
+                    [Kotabaru], [15 febuari 2003]
+                </div>
+                <div class="info-item">
+                    <strong>Alamat</strong>
+                    [jalan kelapa gading]
+                </div>
+                <div class="info-item">
+                    <strong>Email</strong>
+                    hernyaziziah06@email.com
+                </div>
+                <div class="info-item">
+                    <strong>Nomor Telepon</strong>
+                    083847703051
+                </div>
+                <div class="info-item">
+                    <strong>Hobi</strong>
+                    menggambar, Musik, Traveling
+                </div>
+            </div>
+
+            <!-- Tentang Saya -->
+            <div class="about-section">
+                <h2 style="color:#60a5fa; margin-bottom: 15px;">Tentang Saya</h2>
+                <p style="font-size: 1.1rem; color:#c5d9ff;">
+                    Halo, saya adalah seorang mahasiswa yang menyukai hal hal menarik
+                </p>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 NightBlue Theme • Biodata Pribadi</p>
+    </footer>
 </body>
 </html>
