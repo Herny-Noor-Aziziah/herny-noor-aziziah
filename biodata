@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Nama Saya<herny noor aziziah>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        nav h1 { font-size: 1.8rem; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover { color: #ffd700; }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        h1 { color: #2c3e50; margin-bottom: 1.5rem; }
+        p { margin: 12px 0; font-size: 1.1rem; }
+        strong { color: #3498db; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Nama Saya<herny noor aziziah>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="galeri-foto.html">Galeri Foto</a></li>
+                <li><a href="galeri-video.html">Galeri Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Biodata Saya</h1>
+        <p><strong>Nama Lengkap:</strong> [Herny Noor Aziziah]</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> [Kotabaru 15 febuari 2003]</p>
+        <p><strong>Pekerjaan / Profesi:</strong> [Mahasiswa Universitas Lambung Mangkurat]</p>
+        <p><strong>Hobi:</strong> [menyanyi,menggambar,melukis,memasak]</p>
+        <p><strong>Tentang Saya:<saya termasuk pribadi yang mudah beradaptasi dengan lingkungan baru  >
+           Tulis deskripsi singkat tentang diri Anda di sini...
+        </p>
+    </div>
+</body>
+</html>
