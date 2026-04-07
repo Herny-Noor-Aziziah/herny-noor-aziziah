@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Video - Nama Saya<herny noor aziziah>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        nav h1 { font-size: 1.8rem; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover { color: #ffd700; }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1 { text-align: center; margin-bottom: 2rem; color: #2c3e50; }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Nama Saya<herny noor aziziah>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="galeri-foto.html">Galeri Foto</a></li>
+                <li><a href="galeri-video.html">Galeri Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Galeri Video</h1>
+        <div class="video-grid">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+            <!-- Tambahkan video lain di sini -->
+        </div>
+    </div>
+</body>
+</html>
