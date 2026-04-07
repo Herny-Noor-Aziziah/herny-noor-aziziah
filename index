@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Nama Saya<herny noor aziziah>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        nav h1 {
+            font-size: 1.8rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            nav ul { gap: 1rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Nama Saya<herny noor aziziah>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="galeri-foto.html">Galeri Foto</a></li>
+                <li><a href="galeri-video.html">Galeri Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Selamat Datang di Website Saya<Halo,perkenalkan nama saya Herny Noor Aziziah. Saya merupakan mahasiswa yang menempuh pendidikan di bidang perikanan>
+        <p style="font-size: 1.2rem; margin: 20px 0;">
+            Ini adalah website pribadi sederhana yang dibuat dengan HTML & CSS.
+        </p>
+        <p>Silakan jelajahi biodata, galeri foto, dan galeri video saya.</p>
+    </div>
+</body>
+</html>
